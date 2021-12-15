@@ -7,8 +7,13 @@ target("solver")
     add_packages("pybind11")
     set_kind("shared")
     set_extension(".pyd")
-    add_files("src/*.cpp")
+    add_files("src/main.cpp")
 
+target("object")
+    add_packages("pybind11")
+    set_kind("shared")
+    set_extension(".pyd")
+    add_files("src/object.cpp")
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
 --
